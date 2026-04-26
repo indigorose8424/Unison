@@ -1,13 +1,24 @@
-.site-layout-content {
-  background: #fff;
-  padding: 24px;
-  min-height: 280px;
+import React from 'react';
+import { Layout } from 'antd';
+import CompassPage from './pages/CompassPage';
+import './App.css';
+
+const { Header, Content } = Layout;
+
+function App() {
+  return (
+    <Layout className="layout">
+      <Header>
+        <div className="logo" />
+        {/* You can add a title here if you want */}
+      </Header>
+      <Content style={{ padding: '0 50px' }}>
+        <div className="site-layout-content">
+          <CompassPage />
+        </div>
+      </Content>
+    </Layout>
+  );
 }
 
-.logo {
-  float: left;
-  width: 120px;
-  height: 31px;
-  margin: 16px 24px 16px 0;
-  /* background: rgba(255, 255, 255, 0.3); */
-}
+export default App;
