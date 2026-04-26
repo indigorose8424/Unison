@@ -27,4 +27,4 @@ const CompassPage = () => {
   );
 };
 
-export default CompassPage;
+export default CompassPage; 
