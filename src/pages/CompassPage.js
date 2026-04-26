@@ -21,7 +21,7 @@ const CompassPage = () => {
         </Col>
         <Col xs={24} md={12}>
           <Compass />
-        </col>
+        </Col>
       </Row>
     </div>
   );
